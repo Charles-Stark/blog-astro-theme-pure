@@ -34,13 +34,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <div class='flex flex-col items-center gap-y-4'>
         <h1 class='text-3xl font-bold'>{config.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-          <Label title='China'>
+          <Label title='Hangzhou, China'>
             <Icon name='location' class='size-5' slot='icon' />
           </Label>
           <Label
-            title='Source code'
+            title='GitHub'
             as='a'
-            href='https://github.com/cworld1/astro-theme-pure'
+            href='https://github.com/Charles-Stark/'
             target='_blank'
           >
             <Icon name='github' class='size-5' slot='icon' />
@@ -49,6 +49,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       </div>
 
       {/* Get template */}
+      <!--
       <a
         href='https://github.com/cworld1/astro-theme-pure'
         target='_blank'
@@ -61,7 +62,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           <span class='size-2 rounded-full bg-green-400'></span>
         </span>
         <p class='font-medium text-muted-foreground'>Get Template</p>
-      </a>
+        </a>
+      -->
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
@@ -121,10 +123,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <Section title='Education'>
         <Card
           as='a'
-          heading='Lorem ipsum'
+          heading='China JiLiang University'
           subheading='Lorem ipsum dolor sit amet, vidit suscipit at mei.'
-          date='August 2021 - July 2025'
-          href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+          date='September 2021 - July 2025'
+          href='https://www.cjlu.edu.cn'
         >
           {
             /* <ul class='ms-4 list-disc text-muted-foreground'>

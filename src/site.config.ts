@@ -3,11 +3,11 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
+  title: "Stark's",
   /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
+  author: 'Charles Stark',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
+  description: 'Personal website and blog of Charles Stark',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
@@ -48,7 +48,6 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs/list' },
       { title: 'Projects', link: '/projects' },
       { title: 'Links', link: '/links' },
       { title: 'About', link: '/about' }
@@ -59,13 +58,17 @@ export const theme: ThemeUserConfig = {
   footer: {
     // Registration information for ICP (optional)
     registration: {
-      url: 'https://icp.gov.moe/?keyword=APTX4869',
-      text: 'Moe ICP APTX4869'
+      // url: 'https://icp.gov.moe/?keyword=APTX4869',
+      // text: 'Moe ICP APTX4869'
     },
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://astro.build/chat' }
+    social: {
+      github: 'https://github.com/Charles-Stark',
+      x: 'https://x.com/charlesstark_',
+      email: 'mailto:charlesstark918@gmail.com'
+    }
   },
 
   content: {
@@ -80,17 +83,13 @@ export const theme: ThemeUserConfig = {
 
 export const integ: IntegrationUserConfig = {
   links: {
-    logbook: [
-      { date: '2024-07-01', content: 'Lorem ipsum dolor sit amet.' },
-      { date: '2024-07-01', content: 'vidit suscipit at mei.' },
-      { date: '2024-07-01', content: 'Quem denique mea id.' }
-    ],
+    logbook: [{ date: '2025-03-28', content: 'Started!' }],
     // Yourself link info
     applyTip: {
       name: theme.title,
       desc: theme.description || 'Null',
-      url: 'https://astro-pure.js.org',
-      avatar: 'https://astro-pure.js.org/favicon/favicon.ico'
+      url: 'https://c12k.dev/',
+      avatar: 'https://c12k.dev/favicon/favicon.ico'
     }
   },
   // Enable page search function
