@@ -15,7 +15,7 @@ import remarkMath from 'remark-math'
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 // Local integrations
-import { outputCopier } from '@/plugins/output-copier.js'
+import { outputCopier } from './src/plugins/output-copier.ts'
 // Local rehype & remark plugins
 import rehypeAutolinkHeadings from './src/plugins/rehype-auto-link-headings.ts'
 // Shiki
@@ -26,7 +26,7 @@ import {
   transformerNotationDiff,
   transformerNotationHighlight,
   updateStyle
-} from '@/plugins/shiki-transformers.js'
+} from './src/plugins/shiki-transformers.ts'
 import config from './src/site.config.ts'
 
 // https://astro.build/config
