@@ -1,8 +1,9 @@
 // @ts-check
 
-import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 // Adapter
-import vercel from '@astrojs/vercel'
+// import vercel from '@astrojs/vercel'
+import cloudflare from '@astrojs/cloudflare'
+import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 // Integrations
 import AstroPureIntegration from 'astro-pure'
 import { defineConfig } from 'astro/config'
@@ -37,7 +38,9 @@ export default defineConfig({
 
   // Adapter
   // 1. Vercel (serverless)
-  adapter: vercel(),
+  adapter: cloudflare({
+    imageService: 'cloudflare'
+  }),
   output: 'server',
   // 2. Vercel (static)
   // adapter: vercelStatic(),
