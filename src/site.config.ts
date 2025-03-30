@@ -38,7 +38,7 @@ export const theme: ThemeUserConfig = {
     /* Telegram channel */
     // {
     //   tag: 'meta',
-    //   attrs: { name: 'telegram:channel', content: '@cworld0_cn' },
+    //   attrs: { name: 'telegram:channel', content: '@world0_cn' },
     //   content: ''
     // }
   ],
@@ -59,9 +59,9 @@ export const theme: ThemeUserConfig = {
     // Registration information for ICP (optional)
     registration: {
       // url: 'https://icp.gov.moe/?keyword=APTX4869',
-      // text: 'Moe ICP APTX4869'
+      // text: ''
     },
-    /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
+    /** Enable displaying an “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
     social: {
