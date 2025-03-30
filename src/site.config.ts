@@ -24,7 +24,7 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: 'src/assets/avatar.png',
+    src: 'src/assets/avatar.jpg',
     alt: 'Avatar'
   },
 
@@ -89,7 +89,7 @@ export const integ: IntegrationUserConfig = {
       name: theme.title,
       desc: theme.description || 'Null',
       url: 'https://c12k.dev/',
-      avatar: 'https://c12k.dev/favicon/favicon.ico'
+      avatar: 'https://avatars.githubusercontent.com/u/69138022'
     }
   },
   // Enable page search function
