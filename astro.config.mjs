@@ -38,9 +38,7 @@ export default defineConfig({
 
   // Adapter
   // 1. Vercel (serverless)
-  adapter: cloudflare({
-    imageService: 'cloudflare'
-  }),
+  adapter: cloudflare(),
   output: 'server',
   // 2. Vercel (static)
   // adapter: vercelStatic(),
