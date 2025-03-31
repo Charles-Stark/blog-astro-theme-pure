@@ -32,11 +32,13 @@ const linksConfig = config.integ.links
   <!-- apply-links -->
   <h2 id='apply-links'>Apply Links</h2>
   <p>The info for this site:</p>
-  <blockquote class='not-prose grid grid-cols-[auto,1fr] gap-x-2 break-words border-s-4 ps-4'>
-    <span class='text-end'>Name: </span><code>{linksConfig.applyTip.name}</code>
-    <span class='text-end'>Desc: </span><code>{linksConfig.applyTip.desc}</code>
-    <span class='text-end'>Link: </span><code>{linksConfig.applyTip.url}</code>
-    <span class='text-end'>Icon: </span><code>{linksConfig.applyTip.avatar}</code>
+  <blockquote
+    class='not-prose grid grid-cols-[auto,1fr] gap-x-2 overflow-auto break-words border-s-4 ps-4'
+  >
+    <span class='text-end'>Name: </span><span>{linksConfig.applyTip.name}</span>
+    <span class='text-end'>Desc: </span><span>{linksConfig.applyTip.desc}</span>
+    <span class='text-end'>Link: </span><span>{linksConfig.applyTip.url}</span>
+    <span class='text-end'>Icon: </span><span>{linksConfig.applyTip.avatar}</span>
   </blockquote>
 
   <p>
