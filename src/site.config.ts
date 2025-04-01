@@ -123,7 +123,7 @@ export const integ: IntegrationUserConfig = {
     // Server service link
     server: 'https://waline-blog-flame-pi.vercel.app/',
     // Refer https://waline.js.org/en/guide/features/emoji.html
-    emoji: ['bmoji', 'bilibili', 'qq', 'tw-emoji', 'weibo', 'tieba', 'alus'],
+    emoji: ['bmoji', 'qq', 'tw-emoji', 'weibo', 'tieba', 'alus'],
     // Refer https://waline.js.org/en/reference/client/props.html
     additionalConfigs: {
       // search: false,
