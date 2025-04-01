@@ -123,15 +123,17 @@ export const integ: IntegrationUserConfig = {
     // Server service link
     server: 'https://waline-blog-flame-pi.vercel.app/',
     // Refer https://waline.js.org/en/guide/features/emoji.html
-    emoji: ['bmoji', 'weibo'],
+    emoji: ['bmoji', 'bilibili', 'qq', 'tw-emoji', 'weibo', 'tieba', 'alus'],
     // Refer https://waline.js.org/en/reference/client/props.html
     additionalConfigs: {
       // search: false,
+      lang: 'en',
       pageview: true,
       comment: true,
       locale: {
         reaction0: 'Like',
-        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
+        placeholder:
+          'Welcome to comment. (Email to receive replies. Login is unnecessary but recommended)'
       },
       imageUploader: false
     }
