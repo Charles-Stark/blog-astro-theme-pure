@@ -61,7 +61,7 @@ social.rss = {
               <a
                 class='inline-block text-muted-foreground transition-all hover:text-muted-foreground/75'
                 href={url}
-                target={url.startsWith('mailto:') ? undefined : '_blank'}
+                target={url.startsWith('mailto:') ? '_self' : '_blank'}
                 aria-label={label}
               >
                 <Icon name={platform as keyof typeof footerConf.social} />
