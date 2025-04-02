@@ -1,3 +1,5 @@
+import { showToast } from 'packages/pure/utils'
+
 import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } from 'astro-pure/types'
 
 export const theme: ThemeUserConfig = {
@@ -135,7 +137,10 @@ export const integ: IntegrationUserConfig = {
         placeholder:
           'Welcome to comment. (Email to receive replies. Login is unnecessary but recommended)'
       },
-      imageUploader: false
+      imageUploader: (file: any) => {
+        showToast({ message: 'Uploading image...' })
+        alert('Uploading image...')
+      }
     }
   }
 }
