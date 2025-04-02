@@ -134,13 +134,13 @@ export const integ: IntegrationUserConfig = {
       comment: true,
       locale: {
         reaction0: 'Like',
-        placeholder:
-          'Welcome to comment. (Email to receive replies. Login is unnecessary but recommended)'
+        placeholder: 'Welcome to comment (login is unnecessary but recommended)',
+        nick: 'Nickname',
+        sticky: 'Pinned',
+        mail: 'Email',
+        hottest: 'Popular'
       },
-      imageUploader: (file: any) => {
-        showToast({ message: 'Uploading image...' })
-        alert('Uploading image...')
-      }
+      imageUploader: false
     }
   }
 }
