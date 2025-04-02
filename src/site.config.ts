@@ -1,7 +1,5 @@
 import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } from 'astro-pure/types'
 
-import { showToast } from '../packages/pure/utils'
-
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
@@ -136,9 +134,14 @@ export const integ: IntegrationUserConfig = {
         reaction0: 'Like',
         placeholder: 'Welcome to comment (login is unnecessary but recommended)',
         nick: 'Nickname',
+        admin: 'OP',
         sticky: 'Pinned',
         mail: 'Email',
-        hottest: 'Popular'
+        hottest: 'Popular',
+        anonymous: 'Anonymous',
+        mailError: 'Please enter a valid email address',
+        waiting: 'Pending',
+        unsticky: 'Unpin'
       },
       imageUploader: false
     }
