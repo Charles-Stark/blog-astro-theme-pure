@@ -1,6 +1,6 @@
-import { showToast } from 'packages/pure/utils'
-
 import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } from 'astro-pure/types'
+
+import { showToast } from '../packages/pure/utils'
 
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
