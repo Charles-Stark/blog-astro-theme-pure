@@ -1,5 +1,4 @@
 import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } from 'astro-pure/types'
-import { showToast } from 'astro-pure/utils'
 
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
@@ -145,7 +144,6 @@ export const integ: IntegrationUserConfig = {
         unsticky: 'Unpin'
       },
       imageUploader: (_: File) => {
-        showToast({ message: 'Not supported yet' })
         alert('Not supported yet')
         return Promise.resolve('')
       }
