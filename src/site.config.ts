@@ -146,6 +146,8 @@ export const integ: IntegrationUserConfig = {
       },
       imageUploader: (_: File) => {
         showToast({ message: 'Not supported yet' })
+        alert('Not supported yet')
+        return Promise.resolve('')
       }
     }
   }
